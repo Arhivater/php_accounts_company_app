@@ -1,0 +1,28 @@
+// бд testtask
+
+-- Таблица для хранения информации о компаниях
+CREATE TABLE IF NOT EXISTS companies (
+    company_id INT AUTO_INCREMENT PRIMARY KEY,
+    company_name VARCHAR(255) NOT NULL
+);
+
+-- Таблица для хранения информации о клиентах
+CREATE TABLE IF NOT EXISTS clients (
+    client_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    company_id INT,
+    position VARCHAR(100),
+    FOREIGN KEY (company_id) REFERENCES companies(company_id)
+);
+
+-- Таблица для хранения телефонных номеров клиентов
+CREATE TABLE IF NOT EXISTS client_phones (
+    phone_id INT AUTO_INCREMENT PRIMARY KEY,
+    client_id INT,
+    phone_number VARCHAR(20) NOT NULL,
+    FOREIGN KEY (client_id) REFERENCES clients(client_id)
+);
+
+// не помню менял ли что-то тут, в выгрузке бд оно самое

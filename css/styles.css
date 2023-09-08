@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-left-width: 40px;
+    border-right-width: 40px;
+    border-bottom-width: 20px;
+    border-top-width: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 300px;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.addButton {
+    display: block;
+    margin: 0 auto;
+}
+
+#addAccountForm,
+#prevPage,
+#nextPage {
+    width: 80px;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+#addAccountForm:hover,
+#prevPage:hover,
+#nextPage:hover {
+    background-color: #555;
+}
+
+.paginationText {
+    font-size: 18px; 
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
